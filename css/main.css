@@ -1,0 +1,72 @@
+header {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    float: right
+}
+
+.menu {
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: drop-shadow(3px 3px 0 #0002);
+    color: #c22286;
+    transition: 1.4s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.menu span {
+    user-select: none;
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+    transition: 1.4s ease;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.menu.open {
+    filter: drop-shadow(30px 30px 0 #0002);
+    margin-top: 2.5vh;
+    margin-left: 2.5vh;
+    width: 95vh;
+    height: 95vh;
+    border-radius: 12%
+}
+
+.menu.open span {
+    margin-top: 50px;
+    margin-left: 50px;
+    transform: rotate(1440deg)
+}
+
+.menu ul {
+    display: inline-block;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1.4s ease;
+    font-size: 0
+}
+
+.menu.open ul {
+    pointer-events: initial;
+    opacity: 1;
+    font-size: 3rem;
+    margin-top: 125px;
+    margin-left: 125px
+}
+
+.menu.open ul li a {
+    letter-spacing: 10px;
+    display: inline-block;
+    color: currentColor;
+    margin-top: 50px;
+    font-weight: 300;
+}

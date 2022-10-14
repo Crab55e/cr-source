@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap);
+body {
+    background: linear-gradient(45deg, #e71c41, #e71f60);
+    background-size: 200% 200%;
+    animation: GradientBackground 10s ease infinite;
+    font-weight: 200;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif
+}
+
+@keyframes GradientBackground {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
+.imp-hide {
+    visibility: hidden!important
+}
+
+a {
+    background: linear-gradient(currentColor 0 0) var(--p, 0) 100%/var(--d, 0) 2px no-repeat;
+    transition: .3s, background-position 0s 0s
+}
+
+a:hover {
+    --d: 100%;
+    --p: 100%
+}
