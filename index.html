@@ -53,6 +53,19 @@
             </div>
         </div>
     </main>
+    <script>
+        var q = ["🦀______🌲", "_🦀_____🌲", "__🦀____🌲", "___🦀___🌲", "____🦀__🌲", "____🦀🍎🌲", "____🦀🍎🌲", "___🦀🍎__🌲", "__🦀🍎___🌲", "_🦀🍎____🌲", "🦀🍎____🌲", "🦀🍎____🌲", "🦀🍎____🌲", "🦀______🌲"];
+        var count = 0;
+        setInterval(function() {
+            var path = location.pathname;
+            window.history.pushState(null, null, path + '?' + q[count]);
+            if (count < q.length - 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+        }, 500);
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="/scripts/toggle-menu.js"></script>
     <script src="/scripts/index.js"></script>
