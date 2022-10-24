@@ -81,7 +81,8 @@ main .top .line {
 }
 
 .line .circle:hover {
-    background-color: #fff2
+    background-color: #fff2;
+    filter: blur(1px);
 }
 
 .line .circle.active {
@@ -115,6 +116,10 @@ main .top span:nth-child(1) {
 
 main .top span:nth-child(2) {
     right: 25%
+}
+
+.about {
+    visibility: hidden;
 }
 
 main .about .panels {
