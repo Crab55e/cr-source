@@ -6,6 +6,7 @@ body {
 
 main .top {
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
     color: #fff;
     font-size: 5rem;
     padding-bottom: 791px;
@@ -82,7 +83,7 @@ main .top .line {
 
 .line .circle:hover {
     background-color: #fff2;
-    filter: blur(1px)
+    filter: blur(1px);
 }
 
 .line .circle.active {
@@ -119,13 +120,49 @@ main .top span:nth-child(2) {
 }
 
 main .about {
-    width: 100%;
     background-color: #fff;
 }
 
 main .about .panels {
-    font-size: 3rem;
+    font-size: 1.5rem;
     background-color: #fff;
-    width: 100%;
     height: 200vh;
+    overflow: hidden;
+}
+
+main .about .panels .panel {
+    background-color: #fff;
+    padding: 5rem;
+    margin: 2.5px;
+    position: relative;
+}
+
+main .about .panels .panel .texts {
+    position: relative;
+    padding-bottom: 10vh;
+}
+
+main .about .panels .panel .texts .text {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+main .about .panels .panel:nth-child(odd) .texts {
+    text-align: right;
+    right: 5vh;
+    top: 5vh;
+}
+
+main .about .panels .panel:nth-child(odd) .texts .images {
+    position: absolute;
+}
+
+main .about .panels .panel:nth-child(odd) .texts .images li img {
+    left: 100px;
+}
+
+main .about .panels .panel:nth-child(even) .texts {
+    text-align: left;
+    left: 5vh;
+    top: 5vh;
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
     <defs>
-        <style>* {margin:0;} .cls-1{fill:#fff;}.cls-2{filter:url(#drop-shadow-1);}.cls-3{fill:url(#_名称未設定グラデーション_2);}</style>
-        <linearGradient id="_名称未設定グラデーション_2" x1="0" y1="512" x2="1024" y2="512" gradientUnits="userSpaceOnUse">
+        <style>* {margin:0;} .cls-1{fill:#fff;}.cls-2{filter:url(#drop-shadow-1);}.cls-3{fill:url(#gradient);}</style>
+        <linearGradient id="gradient" x1="0" y1="512" x2="1024" y2="512" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#e7253e" />
             <stop offset="1" stop-color="#e62361" />
         </linearGradient>

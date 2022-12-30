@@ -9,64 +9,52 @@
     <meta name="description" content="Crab55e's Design & Developing">
     <link rel="shortcut icon" href="/images/Crab55e.png" type="image/x-icon">
     <!-- css -->
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/all.css">
-    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,400&family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <header>
-        <div class="menu" id="menu">
-            <span class="material-symbols-outlined" style="font-size:50px;">close</span>
+        <div class="menu unred" id="menu"> <span class="material-symbols-outlined" style="font-size:50px;">close</span>
             <ul>
-                <li>
-                    <a href="">info</a>
-                </li>
-                <li>
-                    <a href="">contact</a>
-                </li>
-                <li>
-                    <a href="">license</a>
-                </li>
-                <li>
-                    <a href="">samples</a>
-                </li>
+                <li> <a href="">Info</a> </li>
+                <li> <a href="">Contact</a> </li>
+                <li> <a href="">License</a> </li>
+                <li> <a href="">Samples</a> </li>
             </ul>
         </div>
     </header>
     <main>
-        <div class="top">
-            <span>Design</span>
-            <span>Develop</span>
+        <div class="top red"> <span>Design</span> <span>Develop</span>
             <div class="line" style="transform:rotate(45deg)">
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="about">
-            <div class="panels">
-                <div class="panel">
-                    <img src="/images/1.0.svg" alt="" width="256px">
-                    <div class="text">Hello,world!</div>
-                </div>
-                <div class="panel">
-                    <img src="/images/1.0.svg" alt="" width="256px">
-                    <div class="text">Hello,world!</div>
-                </div>
-                <div class="panel">
-                    <img src="/images/1.0.svg" alt="" width="256px">
-                    <div class="text">Hello,world!</div>
-                </div>
-                <div class="panel">
-                    <img src="/images/1.0.svg" alt="" width="256px">
-                    <div class="text">Hello,world!</div>
-                </div>
-            </div>
+        <div class="about unred">
+            <ul class="panels">
+                <li class="panel">
+                    <div class="texts">
+                        <div class="text">デザイン、色々やってます</div>
+                        <div class="text">主にはロゴ、webサイト制作などです</div>
+                        <div class="text"><a href="design">詳細</a></div>
+                    </div>
+                    <div class="open-btn" id="open-btn"></div>
+                </li>
+                <li class="panel">
+                    <div class="texts">
+                        <div class="text">開発も色々やっています</div>
+                        <div class="text">業務を効率化できるプログラムやアプリ、webサイト制作です</div>
+                        <div class="text"><a href="develop">詳細</a></div>
+                    </div>
+                    <div class="open-btn" id="open-btn"></div>
+                </li>
+            </ul>
         </div>
     </main>
     <!-- jQuery -->
